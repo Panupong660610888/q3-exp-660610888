@@ -46,6 +46,7 @@ export function ItemList() {
             data item */}
             {expenses.map((exp) => (
               <TableRow key={exp.date}>
+                <TableCell>{exp.date}</TableCell>
                 <TableCell>{exp.title}</TableCell>
                 <TableCell>
                   <Badge variant="secondary">{exp.category}</Badge>
